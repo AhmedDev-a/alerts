@@ -1,0 +1,15 @@
+<odoo>
+
+    <menuitem id="menu_alert_root" name="Alerts"/>
+
+    <menuitem id="menu_alert_definition"
+              name="Definitions"
+              parent="menu_alert_root"
+              action="action_alert_definition"/>
+
+    <menuitem id="menu_alert_config"
+              name="Configurations"
+              parent="menu_alert_root"
+              action="action_alert_config"/>
+
+</odoo>

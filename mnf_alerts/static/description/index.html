@@ -1,0 +1,177 @@
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h2 class="oe_slogan" style="color:#d9534f; font-size: 35px; font-weight: bold;">
+                Dynamic Manufacturing Alerts & Notifications
+            </h2>
+            <h3 class="oe_slogan" style="opacity: 0.7;">
+                Real-time SQL-based monitoring for Aluminum Production and beyond.
+            </h3>
+        </div>
+    </div>
+
+    <div class="oe_row oe_spaced" style="background-color: #f8f9fa; padding: 20px; border-radius: 10px;">
+        <div class="oe_span6">
+            <h3 class="oe_mt32">The Goal</h3>
+            <p style="font-size: 16px; line-height: 1.6;">
+                The <b>mnf_alerts</b> engine is designed to bridge the gap between complex SQL manufacturing data and immediate human action. 
+                Instead of checking reports manually, this app monitors your database and pushes alerts directly to the right people.
+            </p>
+            <ul>
+                <li>Reduce production errors.</li>
+                <li>Monitor aluminum profile density/quality in real-time.</li>
+                <li>Automate follow-ups for low inventory.</li>
+            </ul>
+        </div>
+        <div class="oe_span6">
+            <img src="icon.png" style="width: 200px; display: block; margin: auto;" class="img-responsive">
+        </div>
+    </div>
+
+    <!-- HOW TO CONFIGURE -->
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h3 class="oe_mt32 text-center">How to Configure</h3>
+            <hr style="border-top: 2px solid #007bff; width: 100px;">
+        </div>
+        
+        <div class="oe_span4">
+            <div class="card text-center" style="padding: 15px; border: 1px solid #ddd; border-radius: 8px;">
+                <h4 style="color: #007bff;">1. Define Alert Logic</h4>
+                <p>
+                    Create an <b>Alert Definition</b> using SQL queries or business rules.
+                    This defines <b>what condition triggers the alert</b> (e.g. low stock, production delay).
+                </p>
+            </div>
+        </div>
+        
+        <div class="oe_span4">
+            <div class="card text-center" style="padding: 15px; border: 1px solid #ddd; border-radius: 8px;">
+                <h4 style="color: #007bff;">2. Configure Execution</h4>
+                <p>
+                    Create an <b>Alert Configuration</b> linked to the definition.
+                    Set execution interval (Minutes/Hours) to avoid duplicate alerts and control frequency.
+                </p>
+            </div>
+        </div>
+        
+        <div class="oe_span4">
+            <div class="card text-center" style="padding: 15px; border: 1px solid #ddd; border-radius: 8px;">
+                <h4 style="color: #007bff;">3. Select Users & Channels</h4>
+                <p>
+                    Choose target Odoo users who will receive alerts.
+                    Enable delivery channels such as <b>Web Notifications (Bus)</b>, Email, and Activities.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ALERT ARCHITECTURE -->
+    <div class="oe_row oe_spaced" style="background-color: #f8f9fa; padding: 20px; border-radius: 10px;">
+        <div class="oe_span12 text-center">
+            <h3 class="oe_mt32">Alert System Architecture</h3>
+            <p style="font-size: 16px;">
+                Each alert works through two connected layers:
+            </p>
+        </div>
+
+        <div class="oe_span6">
+            <div style="padding: 20px; border: 1px solid #ddd; border-radius: 10px;">
+                <h4 style="color: #d9534f;">Alert Definition (Logic Layer)</h4>
+                <ul>
+                    <li>Defines SQL query or condition</li>
+                    <li>Detects business events (e.g. low stock, delay)</li>
+                    <li>Independent of users or notifications</li>
+                    <li><b>This is WHAT to detect</b></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="oe_span6">
+            <div style="padding: 20px; border: 1px solid #ddd; border-radius: 10px;">
+                <h4 style="color: #28a745;">Alert Configuration (Delivery Layer)</h4>
+                <ul>
+                    <li>Linked to one Alert Definition</li>
+                    <li>Selects target users and departments</li>
+                    <li>Controls notification channels:
+                        <ul>
+                            <li>Web Notifications</li>
+                            <li>Email Alerts</li>
+                            <li>Odoo Activities</li>
+                        </ul>
+                    </li>
+                    <li>Controls frequency and anti-spam rules</li>
+                    <li><b>This is WHO receives and HOW it is delivered</b></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- KEY FEATURES -->
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12 text-center">
+            <h3 class="oe_mt32">Key Features</h3>
+            <div style="display: flex; justify-content: space-around; flex-wrap: wrap; margin-top: 20px;">
+                <div style="margin: 10px;">
+                    <span class="fa fa-bolt fa-3x" style="color: #f0ad4e;"></span>
+                    <p><b>Real-time Bus</b></p>
+                </div>
+                <div style="margin: 10px;">
+                    <span class="fa fa-envelope fa-3x" style="color: #5bc0de;"></span>
+                    <p><b>Email Integration</b></p>
+                </div>
+                <div style="margin: 10px;">
+                    <span class="fa fa-tasks fa-3x" style="color: #5cb85c;"></span>
+                    <p><b>Auto-Activities</b></p>
+                </div>
+                <div style="margin: 10px;">
+                    <span class="fa fa-code fa-3x" style="color: #333;"></span>
+                    <p><b>Dynamic Templates</b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FREE vs PRO SECTION -->
+    <div class="oe_row oe_spaced" style="margin-top: 40px;">
+        <div class="oe_span12 text-center">
+            <h3 class="oe_mt32">Free vs Pro Version</h3>
+            <hr style="border-top: 2px solid #28a745; width: 120px;">
+            <p style="font-size: 16px; opacity: 0.8;">
+                Choose the version that fits your business needs
+            </p>
+        </div>
+
+        <!-- FREE -->
+        <div class="oe_span6">
+            <div style="padding: 20px; border: 2px solid #28a745; border-radius: 10px; background-color: #f8fff9;">
+                <h4 style="color: #28a745; text-align: center;">FREE Version</h4>
+                <p style="text-align: center; font-weight: bold;">Core Alert Engine</p>
+                <ul style="font-size: 15px; line-height: 1.8;">
+                    <li>SQL-based alerts engine</li>
+                    <li>Real-time Web Notifications (Bus)</li>
+                    <li>Odoo Activities tracking</li>
+                    <li>Dynamic message templates</li>
+                    <li>Lightweight and fast execution</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- PRO -->
+        <div class="oe_span6">
+            <div style="padding: 20px; border: 2px solid #d9534f; border-radius: 10px; background-color: #fff8f8;">
+                <h4 style="color: #d9534f; text-align: center;">PRO Version</h4>
+                <p style="text-align: center; font-weight: bold;">Advanced Intelligence Layer</p>
+                <ul style="font-size: 15px; line-height: 1.8;">
+                    <li>Email Engine (SMTP + Templates)</li>
+                    <li>AI-based alert rules & recommendations</li>
+                    <li>Scheduling & cron dashboard</li>
+                    <li>Multi-company / multi-warehouse rules</li>
+                    <li>Advanced logs & analytics dashboard</li>
+                    <li>Alert performance tracking</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</section>

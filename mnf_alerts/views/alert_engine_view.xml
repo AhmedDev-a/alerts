@@ -1,0 +1,49 @@
+<odoo>
+
+    <!-- Form View -->
+    <record id="view_alert_engine_form" model="ir.ui.view">
+        <field name="name">mnf.alert.engine.form</field>
+        <field name="model">mnf.alert.engine</field>
+        <field name="arch" type="xml">
+
+            <form string="Alert Engine">
+
+                <header>
+                    <button name="button_run_alerts"
+                            type="object"
+                            string="Run Alerts"
+                            class="btn-primary"/>
+                </header>
+
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="active"/>
+                    </group>
+                </sheet>
+
+            </form>
+
+        </field>
+    </record>
+
+
+    <!-- Action -->
+    <record id="action_alert_engine" model="ir.actions.act_window">
+        <field name="name">Alert Engine</field>
+        <field name="res_model">mnf.alert.engine</field>
+        <field name="view_mode">form</field>
+    </record>
+
+
+    <!-- Menu -->
+    <menuitem id="menu_alert_root"
+              name="Alerts"/>
+
+    <menuitem id="menu_alert_engine"
+              name="Run Alerts"
+              parent="menu_alert_root"
+              action="action_alert_engine"
+              active="0"/>
+
+</odoo>

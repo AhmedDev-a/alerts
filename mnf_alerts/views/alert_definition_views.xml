@@ -1,0 +1,72 @@
+<odoo>
+
+    <!-- ACTION -->
+    <record id="action_alert_definition" model="ir.actions.act_window">
+        <field name="name">Alert Definitions</field>
+        <field name="res_model">mnf.alert.definition</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- TREE -->
+    <record id="view_alert_definition_tree" model="ir.ui.view">
+        <field name="name">mnf.alert.definition.tree</field>
+        <field name="model">mnf.alert.definition</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="alert_code"/>
+                <field name="severity"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- FORM -->
+    <record id="view_alert_definition_form" model="ir.ui.view">
+        <field name="name">mnf.alert.definition.form</field>
+        <field name="model">mnf.alert.definition</field>
+        <field name="arch" type="xml">
+            <form string="Alert Definition">
+                <sheet>
+
+                    <group>
+                        <field name="alert_code"/>
+                        <field name="severity"/>
+                    </group>
+
+                    <notebook>
+
+                        <!-- SQL -->
+                        <page string="SQL Query">
+                            <group>
+                                <field name="sql_statement" widget="text"/>
+                            </group>
+
+                            <footer>
+                                <button name="action_test_query"
+                                        type="object"
+                                        string="Test Query"
+                                        class="btn-primary"/>
+                            </footer>
+                        </page>
+
+                        <!-- MESSAGE -->
+                        <page string="Message Template">
+                        <group>
+                            <field name="message_template"/>
+                        </group>
+                        </page>
+
+                        <!-- URL -->
+                        <page string="URL Template">
+                        <group>
+                            <field name="url"/>
+                        </group>
+                        </page>
+                        
+                    </notebook>
+
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+</odoo>
