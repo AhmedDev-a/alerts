@@ -1,0 +1,4 @@
+GNU LESSER GENERAL PUBLIC LICENSE
+Version 3, 12 April 2026
+
+This program is free software...

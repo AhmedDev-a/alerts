@@ -5,7 +5,7 @@
     'description': 'Generates alerts based on SQL queries and sends notifications',
     'author': 'Ahmed Khaled',
     "images": ["static/description/icon.png"],
-
+'license': 'LGPL-3',
     'depends': ['base', 'mail'],
 
     'data': [
@@ -32,7 +32,7 @@
 
     'assets': {
   'web.assets_backend': [
-        '\mnf_alerts/static/src/js/notification_handler.js',
+        'mnf_alerts/static/src/js/notification_handler.js',
     ],
     },
     'installable': True,
