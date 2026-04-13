@@ -10,125 +10,87 @@
     </div>
 
     <div style="background-color:#f8f9fa; padding:30px; border-radius:15px; display:flex; flex-wrap:wrap; gap:30px; align-items:center; justify-content:center; box-shadow: inset 0 0 10px rgba(0,0,0,0.02);">
-        
         <div style="flex:1; min-width:300px; max-width: 550px;">
             <h3 style="color: #2c3e50; border-left: 4px solid #d9534f; padding-left: 15px;">The Goal</h3>
             <p style="font-size:16px; line-height:1.8; color: #444; margin-top: 15px;">
                 The <b>mnf_alerts</b> engine bridges the gap between complex SQL manufacturing data and immediate human action.
                 Instead of checking reports manually, the system monitors your database and pushes alerts directly to the right people.
             </p>
-            <ul style="line-height: 2; color: #555;">
-                <li><i class="fa fa-check text-danger"></i> Reduce production errors</li>
-                <li><i class="fa fa-check text-danger"></i> Monitor aluminum profile quality in real-time</li>
-                <li><i class="fa fa-check text-danger"></i> Automate follow-ups for low inventory</li>
+            <ul style="line-height: 2; color: #555; list-style: none; padding-left: 0;">
+                <li><i class="fa fa-check-circle" style="color:#d9534f;"></i> Reduce production errors</li>
+                <li><i class="fa fa-check-circle" style="color:#d9534f;"></i> Monitor aluminum profile quality in real-time</li>
+                <li><i class="fa fa-check-circle" style="color:#d9534f;"></i> Automate follow-ups for low inventory</li>
             </ul>
         </div>
-
         <div style="flex:1; min-width:200px; text-align:center;">
-             <img src="icon.png" alt="App Icon" style="max-width: 180px; filter: drop-shadow(0 5px 15px rgba(0,0,0,0.1));">
+             <img src="odoo_png.jpg" alt="Alert Icon" style="max-width: 180px; filter: drop-shadow(0 5px 15px rgba(0,0,0,0.1));">
         </div>
-
     </div>
 
     <div style="margin-top:60px;">
         <h3 style="text-align:center; font-weight: bold;">How to Configure</h3>
         <hr style="border-top:3px solid #007bff; width:60px; margin: 15px auto;">
-
         <div style="display:flex; flex-wrap:wrap; gap:20px; margin-top:30px; justify-content: center;">
-            
             <div style="flex:1; min-width:250px; max-width: 320px; padding:25px; border:1px solid #eee; border-radius:12px; text-align:center; background: #fff; box-shadow: 0 4px 6px rgba(0,0,0,0.02);">
                 <div style="margin-bottom: 15px;"><span class="fa fa-database fa-2x" style="color:#007bff;"></span></div>
                 <h4 style="color:#007bff; font-weight: bold;">1. Define Alert Logic</h4>
-                <p style="color: #666; font-size: 14px;">
-                    Create an <b>Alert Definition</b> using SQL queries.
-                    This defines <b>what condition triggers the alert</b>.
-                </p>
+                <p style="color: #666; font-size: 14px;">Create an <b>Alert Definition</b> using SQL queries to define what condition triggers the alert.</p>
             </div>
-
             <div style="flex:1; min-width:250px; max-width: 320px; padding:25px; border:1px solid #eee; border-radius:12px; text-align:center; background: #fff; box-shadow: 0 4px 6px rgba(0,0,0,0.02);">
                 <div style="margin-bottom: 15px;"><span class="fa fa-clock-o fa-2x" style="color:#007bff;"></span></div>
                 <h4 style="color:#007bff; font-weight: bold;">2. Configure Execution</h4>
-                <p style="color: #666; font-size: 14px;">
-                    Set execution interval (minutes/hours) to control frequency and avoid spamming duplicates.
-                </p>
+                <p style="color: #666; font-size: 14px;">Set execution intervals to control frequency and avoid spamming duplicate notifications.</p>
             </div>
-
             <div style="flex:1; min-width:250px; max-width: 320px; padding:25px; border:1px solid #eee; border-radius:12px; text-align:center; background: #fff; box-shadow: 0 4px 6px rgba(0,0,0,0.02);">
                 <div style="margin-bottom: 15px;"><span class="fa fa-users fa-2x" style="color:#007bff;"></span></div>
                 <h4 style="color:#007bff; font-weight: bold;">3. Select Channels</h4>
-                <p style="color: #666; font-size: 14px;">
-                    Choose users and enable delivery:
-                    <b>Web Notifications</b>, Email, and Activities.
-                </p>
+                <p style="color: #666; font-size: 14px;">Choose users and enable delivery via Web Notifications, Email, or Activities.</p>
             </div>
-
         </div>
     </div>
 
     <div style="background-color:#f8f9fa; padding:40px 20px; border-radius:15px; margin-top:60px;">
-        
         <div style="text-align:center; margin-bottom: 30px;">
             <h3 style="font-weight: bold;">Alert System Architecture</h3>
-            <p style="font-size:16px; opacity: 0.8;">
-                Each alert works through two connected layers:
-            </p>
+            <p style="font-size:16px; opacity: 0.8;">Two connected layers for maximum flexibility:</p>
         </div>
-
-        <div style="display:flex; flex-wrap:wrap; gap:25px; justify-content:center; align-items: stretch;">
-
-            <div style="flex:1; min-width:300px; max-width: 450px;">
-                <div style="height: 100%; padding:25px; border:1px solid #ddd; border-radius:12px; background: #fff;">
-                    <h4 style="color:#d9534f; font-weight: bold; border-bottom: 1px solid #eee; padding-bottom: 10px; margin-bottom: 15px;">
-                        Alert Definition (Logic Layer)
-                    </h4>
-                    <ul style="padding-left: 20px; line-height: 1.8; color: #555;">
-                        <li>Defines SQL query or condition</li>
-                        <li>Detects business events (low stock, delay)</li>
-                        <li>Independent of users or notifications</li>
-                        <li style="margin-top: 10px; list-style: none; margin-left: -20px;">
-                            <span style="background: #fee; color: #d9534f; padding: 3px 10px; border-radius: 5px; font-weight: bold; font-size: 12px;">WHAT to detect</span>
-                        </li>
-                    </ul>
-                </div>
+        <div style="display:flex; flex-wrap:wrap; gap:25px; justify-content:center;">
+            <div style="flex:1; min-width:300px; max-width: 450px; padding:25px; border:1px solid #ddd; border-radius:12px; background: #fff;">
+                <h4 style="color:#d9534f; font-weight: bold; border-bottom: 1px solid #eee; padding-bottom: 10px; margin-bottom: 15px;">Alert Definition (Logic)</h4>
+                <ul style="padding-left: 20px; line-height: 1.8; color: #555;">
+                    <li>Defines SQL query or condition</li>
+                    <li>Detects business events (low stock, delay)</li>
+                    <li><b>WHAT to detect</b></li>
+                </ul>
             </div>
-
-            <div style="flex:1; min-width:300px; max-width: 450px;">
-                <div style="height: 100%; padding:25px; border:1px solid #ddd; border-radius:12px; background: #fff;">
-                    <h4 style="color:#28a745; font-weight: bold; border-bottom: 1px solid #eee; padding-bottom: 10px; margin-bottom: 15px;">
-                        Alert Configuration (Delivery Layer)
-                    </h4>
-                    <ul style="padding-left: 20px; line-height: 1.8; color: #555;">
-                        <li>Linked to Alert Definition</li>
-                        <li>Selects target users & channels</li>
-                        <li>Frequency & anti-spam control</li>
-                        <li style="margin-top: 10px; list-style: none; margin-left: -20px;">
-                            <span style="background: #e8f5e9; color: #28a745; padding: 3px 10px; border-radius: 5px; font-weight: bold; font-size: 12px;">WHO receives & HOW</span>
-                        </li>
-                    </ul>
-                </div>
+            <div style="flex:1; min-width:300px; max-width: 450px; padding:25px; border:1px solid #ddd; border-radius:12px; background: #fff;">
+                <h4 style="color:#28a745; font-weight: bold; border-bottom: 1px solid #eee; padding-bottom: 10px; margin-bottom: 15px;">Alert Configuration (Delivery)</h4>
+                <ul style="padding-left: 20px; line-height: 1.8; color: #555;">
+                    <li>Linked to target users & channels</li>
+                    <li>Controls frequency & anti-spam</li>
+                    <li><b>WHO receives & HOW</b></li>
+                </ul>
             </div>
-
         </div>
     </div>
 
     <div style="margin-top:60px; text-align:center;">
-        <h3 style="font-weight: bold;">Key Features</h3>
-
-        <div style="display:flex; justify-content:center; flex-wrap:wrap; gap:40px; margin-top:30px;">
+        <h3 style="font-weight: bold; margin-bottom: 30px;">Key Features</h3>
+        <div style="display:flex; justify-content:center; flex-wrap:wrap; gap:40px;">
             <div style="width: 120px;">
-                <span class="fa fa-bolt fa-3x" style="color:#f0ad4e;"></span>
+                <i class="fa fa-bolt fa-3x" style="color:#f0ad4e;"></i>
                 <p style="margin-top: 10px;"><b>Real-time Bus</b></p>
             </div>
             <div style="width: 120px;">
-                <span class="fa fa-envelope fa-3x" style="color:#5bc0de;"></span>
+                <i class="fa fa-envelope fa-3x" style="color:#5bc0de;"></i>
                 <p style="margin-top: 10px;"><b>Email Integration</b></p>
             </div>
             <div style="width: 120px;">
-                <span class="fa fa-tasks fa-3x" style="color:#5cb85c;"></span>
+                <i class="fa fa-tasks fa-3x" style="color:#5cb85c;"></i>
                 <p style="margin-top: 10px;"><b>Auto-Activities</b></p>
             </div>
             <div style="width: 120px;">
-                <span class="fa fa-code fa-3x" style="color: #333;"></span>
+                <i class="fa fa-code fa-3x" style="color: #333;"></i>
                 <p style="margin-top: 10px;"><b>Dynamic Templates</b></p>
             </div>
         </div>
@@ -137,40 +99,25 @@
     <div style="margin-top:80px; padding-bottom: 40px;">
         <h3 style="text-align:center; font-weight: bold;">Free vs Pro Version</h3>
         <hr style="border-top:3px solid #28a745; width:80px; margin:15px auto;">
-        <p style="text-align:center; opacity:0.8; margin-bottom: 30px;">
-            Choose the version that fits your business needs
-        </p>
-
-        <div style="display:flex; flex-wrap:wrap; gap:30px; justify-content: center; align-items: stretch;">
-
+        <div style="display:flex; flex-wrap:wrap; gap:30px; justify-content: center; margin-top: 30px;">
             <div style="flex:1; min-width:300px; max-width: 400px; padding:30px; border:1px solid #ddd; border-radius:15px; background:#fcfcfc;">
-                <h4 style="color:#777; text-align:center; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;">FREE Version</h4>
-                <p style="text-align:center; color: #28a745; font-weight: bold;">Core Alert Engine</p>
+                <h4 style="color:#777; text-align:center; font-weight: bold;">FREE VERSION</h4>
                 <hr>
                 <ul style="list-style: none; padding: 0; line-height: 2.5; color: #666;">
-                    <li><i class="fa fa-check-circle-o" style="color: #28a745;"></i> SQL-based alerts</li>
-                    <li><i class="fa fa-check-circle-o" style="color: #28a745;"></i> Real-time Web Notifications</li>
-                    <li><i class="fa fa-check-circle-o" style="color: #28a745;"></i> Odoo Activities</li>
-                    <li><i class="fa fa-check-circle-o" style="color: #28a745;"></i> Dynamic templates</li>
+                    <li><i class="fa fa-check text-success"></i> SQL-based alerts</li>
+                    <li><i class="fa fa-check text-success"></i> Web Notifications</li>
+                    <li><i class="fa fa-check text-success"></i> Odoo Activities</li>
                 </ul>
             </div>
-
             <div style="flex:1; min-width:300px; max-width: 400px; padding:30px; border:2px solid #d9534f; border-radius:15px; background:#fff; box-shadow: 0 10px 30px rgba(217,83,79,0.1);">
-                <div style="text-align: center; margin-top: -45px; margin-bottom: 20px;">
-                    <span style="background: #d9534f; color: white; padding: 5px 20px; border-radius: 20px; font-size: 12px; font-weight: bold;">RECOMMENDED</span>
-                </div>
-                <h4 style="color:#d9534f; text-align:center; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;">PRO Version</h4>
-                <p style="text-align:center; color: #d9534f; font-weight: bold;">Advanced Intelligence</p>
+                <h4 style="color:#d9534f; text-align:center; font-weight: bold;">PRO VERSION</h4>
                 <hr>
                 <ul style="list-style: none; padding: 0; line-height: 2.5; color: #444;">
-                    <li><i class="fa fa-star" style="color: #f0ad4e;"></i> Email Engine (SMTP)</li>
-                    <li><i class="fa fa-star" style="color: #f0ad4e;"></i> AI-based rules</li>
-                    <li><i class="fa fa-star" style="color: #f0ad4e;"></i> Scheduling dashboard</li>
-                    <li><i class="fa fa-star" style="color: #f0ad4e;"></i> Multi-company support</li>
-                    <li><i class="fa fa-star" style="color: #f0ad4e;"></i> Analytics & logs</li>
+                    <li><i class="fa fa-star text-warning"></i> Email Engine (SMTP)</li>
+                    <li><i class="fa fa-star text-warning"></i> AI-based rules</li>
+                    <li><i class="fa fa-star text-warning"></i> Multi-company support</li>
                 </ul>
             </div>
-
         </div>
     </div>
 
